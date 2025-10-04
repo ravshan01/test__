@@ -24,25 +24,17 @@ export default defineConfig({
         return `${prefix}_${name}__${hash}`
       },
     },
-    preprocessorOptions: {
-      scss: {
-        api: 'modern',
-      },
-      sass: {
-        api: 'modern',
-      },
-    },
 
     devSourcemap: true,
   },
 
-  // optimizeDeps: {
-  //   esbuildOptions: {
-  //     tsconfigRaw: {
-  //       compilerOptions: {
-  //         experimentalDecorators: true,
-  //       },
-  //     },
-  //   },
-  // },
+  optimizeDeps: {
+    esbuildOptions: {
+      tsconfigRaw: {
+        compilerOptions: {
+          experimentalDecorators: true,
+        },
+      },
+    },
+  },
 })
