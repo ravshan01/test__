@@ -1,4 +1,4 @@
-import { UiConfigProvider } from '../../../ui/components/UiConfigProvider'
+import { UiConfigProvider } from '@/ui/components/UiConfigProvider'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 import './App.module.sass'
