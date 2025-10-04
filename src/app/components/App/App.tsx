@@ -1,6 +1,7 @@
-import './App.module.sass'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { UiConfigProvider } from '../../../ui/components/UiConfigProvider'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+import './App.module.sass'
 
 const queryClient = new QueryClient()
 

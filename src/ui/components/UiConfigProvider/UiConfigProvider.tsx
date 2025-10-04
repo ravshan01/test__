@@ -1,6 +1,7 @@
 import type { PropsWithChildren } from 'react'
-import enLocale from 'antd/locale/en_US'
+
 import { App, ConfigProvider } from 'antd'
+import enLocale from 'antd/locale/en_US'
 
 export function UiConfigProvider(props: IUiConfigProviderProps) {
   const { children } = props
