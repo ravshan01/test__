@@ -7,7 +7,7 @@ export function UiConfigProvider(props: IUiConfigProviderProps) {
   const { children } = props
 
   return (
-    <ConfigProvider locale={enLocale}>
+    <ConfigProvider locale={enLocale} theme={{ cssVar: true, hashed: false }}>
       <App>{children}</App>
     </ConfigProvider>
   )
