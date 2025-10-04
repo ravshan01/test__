@@ -13,18 +13,19 @@ export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
+    plugins: { storybook },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
-      storybook.configs.recommended,
     ],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
     },
     rules: {
+      ...storybook.configs.recommended.rules,
       '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
