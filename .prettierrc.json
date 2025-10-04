@@ -7,7 +7,7 @@
     "@trivago/prettier-plugin-sort-imports"
   ],
   "importOrder": [
-    "classnames|react$|storybook|vitest",
+    "classnames|react|storybook|vitest",
     "reflect-metadata|inversify",
     "antd",
     "<THIRD_PARTY_MODULES>",
