@@ -5,6 +5,9 @@ import '@ant-design/v5-patch-for-react-19'
 import { IOC } from '../src/ioc/ioc'
 import { UiConfigProvider } from '../src/ui/components/UiConfigProvider'
 
+import '../src/app/styles/index.styles.sass'
+import './styles/storybook.styles.sass'
+
 bootstrap()
 
 const preview: Preview = {
