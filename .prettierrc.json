@@ -9,7 +9,7 @@
   "importOrder": [
     "classnames|^react|storybook|vitest",
     "reflect-metadata|inversify",
-    "antd|@ant",
+    "^antd|^@ant",
     "<THIRD_PARTY_MODULES>",
     "(@\\/|[^\\/]+\\/)(?!.*images)(?!.*\\.(css|scss|sass)).+$",
     "images|.(css|scss|sass)"
