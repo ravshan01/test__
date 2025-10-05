@@ -12,7 +12,7 @@ export class AuthServiceMockAdapter implements IAuthService {
     if (!success) throw new Error('Incorrect login or password')
   }
 
-  async twoFactorConfirm() {
+  async twoFAConfirm() {
     await new Promise((r) => setTimeout(r, 1000))
 
     const success = simpleFaker.datatype.boolean()

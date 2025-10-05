@@ -3,6 +3,6 @@ export interface IAuthLoginDTO {
   password: string
 }
 
-export interface IAuth2FactorConfirmDTO {
+export interface IAuth2FAConfirmDTO {
   code: string
 }
