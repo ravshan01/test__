@@ -15,10 +15,10 @@ export function AuthFormCardSubHeader(props: IAuthFormCardSubHeaderProps) {
 
   return (
     <div className={rootClass} {...rest}>
-      <Typography.Title className={styles.subHeader__title} level={3}>
+      <Typography.Title className={styles.title} level={3}>
         {title}
       </Typography.Title>
-      <Typography.Text className={styles.subHeader__description}>
+      <Typography.Text className={styles.description}>
         {description}
       </Typography.Text>
     </div>
