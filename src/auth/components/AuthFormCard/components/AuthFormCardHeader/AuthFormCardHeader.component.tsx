@@ -8,8 +8,9 @@ import styles from './AuthFormCardHeader.module.sass'
 import { LogoWithTextImage } from '@/common/images'
 
 export function AuthFormCardHeader(props: IAuthFormCardHeaderProps) {
-  const { className, hasPrevButton = false, onPrev } = props
+  const { className, step, onPrev } = props
   const rootClass = cn(styles.root, className)
+  const hasPrevButton = step === '2fa'
 
   return (
     <div className={rootClass}>
@@ -30,6 +31,6 @@ export function AuthFormCardHeader(props: IAuthFormCardHeaderProps) {
 
 export interface IAuthFormCardHeaderProps
   extends HTMLAttributes<HTMLDivElement> {
-  hasPrevButton?: boolean
-  onPrev?(): void
+  step: 'login' | '2fa'
+  onPrev(): void
 }
